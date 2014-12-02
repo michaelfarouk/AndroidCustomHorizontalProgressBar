@@ -21,21 +21,6 @@
                 android:angle="270" />
         </shape>
     </item>
-    <!--
-    <item
-        android:id="@android:id/secondaryProgress">
-        <clip>
-            <shape>
-                <corners
-                    android:radius="5dip" />
-                <gradient
-                    android:startColor="#770e75af"
-                    android:endColor="#771997e1"
-                    android:angle="90" />
-            </shape>
-        </clip>
-    </item>
-    -->
     <item
         android:id="@android:id/progress">
         <clip>
