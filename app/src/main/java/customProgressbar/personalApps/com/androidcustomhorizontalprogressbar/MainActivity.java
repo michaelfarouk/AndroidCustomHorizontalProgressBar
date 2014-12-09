@@ -11,7 +11,11 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
     private ProgressBar customProgress;
+    private ProgressBar secondCustomProgress;
     private TextView progressDisplay;
+    private TextView secondProgressDispaly;
+    private ProgressBar thirdCustomProgress;
+    private TextView thirdProgressDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,12 @@ public class MainActivity extends Activity {
     private void init() {
         customProgress = (ProgressBar)findViewById(R.id.customProgress);
         progressDisplay = (TextView)findViewById(R.id.progressDisplay);
+
+        secondCustomProgress = (ProgressBar)findViewById(R.id.secondCustomProgress);
+        secondProgressDispaly = (TextView)findViewById(R.id.secondProgressDisplay);
+
+        thirdCustomProgress = (ProgressBar)findViewById(R.id.thirdCustomProgress);
+        thirdProgressDisplay = (TextView)findViewById(R.id.thirdProgressDisplay);
     }
 
     /**
@@ -66,6 +76,14 @@ public class MainActivity extends Activity {
             customProgress.setProgress(values[0]);
             customProgress.setSecondaryProgress(values[0] + 1);
             progressDisplay.setText(String.valueOf(myProgress)+"%");
+
+            secondCustomProgress.setProgress(values[0]+15);
+            secondCustomProgress.setSecondaryProgress(values[0] + 16);
+            secondProgressDispaly.setText(String.valueOf(myProgress+15)+"%");
+
+            thirdCustomProgress.setProgress(values[0]+7);
+            thirdCustomProgress.setSecondaryProgress(values[0] + 8);
+            thirdProgressDisplay.setText(String.valueOf(myProgress + 7)+"%");
         }
 
         @Override
