@@ -88,7 +88,6 @@ public class MainActivity extends Activity {
 
         @Override
         protected void onPostExecute(Void result) {
-
         }
     }
 }
